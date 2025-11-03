@@ -13,6 +13,10 @@ public class Enemy : MonoBehaviour
         agent.updateRotation = false; // Khong tu dong quay theo huong di chuyen
         agent.avoidancePriority = Mathf.RoundToInt(agent.speed * 10); // Thiet lap uu tien tranh va cham
     }
+    private void Start()
+    {
+        waypoint =  FindAnyObjectByType<WaypointManager>().GetWaypoints();
+    }
     private void Update()
     {
         FaceTarget(agent.steeringTarget);
@@ -26,8 +30,8 @@ public class Enemy : MonoBehaviour
     private Vector3 GetNextWayPoint()
     {
         if (waypointIndex >= waypoint.Length) {
-            waypointIndex = 0;
-            //return transform.position;
+            //waypointIndex = 0;
+            return transform.position;
         }
         Vector3 targetPoint = waypoint[waypointIndex].position;
         waypointIndex++;
