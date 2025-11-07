@@ -4460,6 +4460,7 @@ MonoBehaviour:
   curentEnemy: {fileID: 88617972}
   towerHead: {fileID: 7097256607479399660}
   rotationSpeed: 10
+  attackRange: 1.5
 --- !u!4 &2136834368
 Transform:
   m_ObjectHideFlags: 0
@@ -4469,7 +4470,7 @@ Transform:
   m_GameObject: {fileID: 2136834366}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.88, y: 2.23, z: 2.39}
+  m_LocalPosition: {x: -1.88, y: 2.13, z: 2.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
